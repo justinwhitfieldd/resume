@@ -1,0 +1,220 @@
+%-------------------------
+% Resume in Latex
+% Author : Sourabh Bajaj
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.6in}
+\addtolength{\textwidth}{1.1in}
+\addtolength{\topmargin}{-.6in}
+\addtolength{\textheight}{1.1in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{#2 \vspace{-2pt}}
+  }
+}
+\newcommand{\resumeTechItem}[2]{
+  \item[]\small{  % The empty [] will remove the bullet point
+    \textbf{#1}{}{#2 \vspace{-2pt}}
+  }
+}
+
+% Just in case someone needs a heading that does not need to be in a list
+\newcommand{\resumeHeading}[4]{
+    \begin{tabular*}{0.99\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+\newcommand{\aresumeSubheading}[4]{
+  \vspace{-1pt}
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+\newcommand{\resumeSubSubheading}[2]{
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-7.4pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{{\Large Justin Whitfield}} & Email : \href{mailto:justinpwhitfield@gmail.com}{justinpwhitfield@gmail.com}\\
+  \href{https://justinwhitfield.info}{justinwhitfield.info} & Mobile : \href{tel:+16015693409}{+1-601-569-3409} \\
+  \href{https://quizaiapp.com}{quizaiapp.com}\\
+\end{tabular*}
+
+
+%-----------EDUCATION-----------------
+\section{Education}
+    \aresumeSubheading
+      {Mississippi State University}{Starkville, MS}
+      {Bachelor of Science in Software Engineering;  GPA: 4.00 / 4.00}{Graduating -- May 2024}
+    % \resumeSubheading
+    %   {Pearl River Community College}{Poplarville, MS}
+    %   {Associates of Science;  GPA: 3.40 / 4.00 }{Aug. 2020 -- May 2022}
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+    {USDA Machine Learning Research}{Starkville, MS}
+    {Research Position}{Dec 2023 - May 2024}
+    \resumeItemListStart
+      \resumeItem{}
+        {Built a multivariate linear regression model to predict the moisture content of grains based on their dielectric properties, enhancing the efficiency of the grain buy-sell process.}
+      \resumeItem{}
+        {Developed a system for rapid and accurate determination of moisture percentage (M\%), significantly outperforming classical methods that could take over 20 hours for measurement.}
+        \resumeItemListEnd
+    \resumeSubheading
+      {The Estée Lauder Companies}{Long Island City, NY}
+      {Software Engineering Intern}{May 2023 - Aug 2023}
+      \resumeItemListStart
+        \resumeItem{}
+          {Led an Agile team to ideate and develop a generative AI chatbot chat sales assistant for the Origins brand, which provided product recommendations and interacted with customers seamlessly.}
+        \resumeItem{}
+          {Presented final MVP to global brand president, where permission was granted for further development, a first for an internship project.}
+        \resumeItem{}
+          {Utilized a vector database of products and made semantic searches through OpenAI API queries and embeddings.}
+        \resumeItemListEnd
+  \resumeSubHeadingListEnd
+\section{Projects}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Quiz-AI iOS App}{}
+      {Personal Project}{Oct 2022 - Current}
+      \resumeItemListStart
+        \resumeItem{}
+          {Developed and launched an iOS app that allows users to photograph a question then uses OCR to extract text from the image to provide an AI generated answer. Find out more at quizaiapp.com.}
+        \resumeItem{}
+          {Integrated OpenAI's API to provide answers to users' questions.}
+        \resumeItem{}
+          {Implemented Google Ads to offset the API usage costs.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Recipe Vision}{}
+      {School Project}{Aug 2023 - Nov 2023}
+      \resumeItemListStart
+        \resumeItem{}
+          {Fine-tuned a YOLO v7 model on a proprietary dataset of annotated grocery images to recognize ingredients from user-submitted photos.}
+        \resumeItem{}
+          {Integrated OpenAI API to generate real-time recipes based on the identified ingredients, paired with the Google Images API to dynamically fetch and display images of the generated recipes.}
+        \resumeItem{}
+          {Engineered a seamless user interface to capture ingredient photos and display recipes, optimizing for user-friendliness and efficiency.}
+        \resumeItemListEnd
+
+    \resumeSubheading
+      {Nerf Quadruped Robot}{}
+      {School Project}{Aug 2023 - Nov 2023}
+      \resumeItemListStart
+        \resumeItem{}
+          {Engineered a specialized control system to integrate a Nerf gun with a Unitree GO1 quadruped robot, achieving automated aiming and firing.}
+        \resumeItem{}
+          {Implemented object recognition algorithms to identify and track human targets, optimizing robot positioning for accurate shooting.}
+        \resumeItem{}
+          {Utilized electromagnetic solenoids for triggering the Nerf gun, controlled through serial port communication.}
+        \resumeItemListEnd
+
+    \resumeSubheading
+    {NetDeals Ecommerce Website}{}
+    {School Project}{Aug 2022 - Dec 2022}
+    \resumeItemListStart
+      \resumeItem{}
+        {Designed and implemented a full-stack ecommerce website.}
+      \resumeItem{}
+        {Features included seller dashboards, product listing creation/deletion, buyer cart functionalities, product comparisons, reporting tools, and return capabilities.}
+        \resumeItem{}
+        {Backend infrastructure was powered by Django, while the frontend was styled using Bulma CSS.}
+        \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------------
+\section{Technical Skills}
+  \resumeSubHeadingListStart
+    \resumeTechItem{Languages and Frameworks: }
+      {Python, Sklearn, Pytorch, C, C++, Swift, HTML, CSS, Javascript, Flask, Django, React, Tailwind, SQL}
+    \resumeTechItem{Developer Tools: }
+      {Git, Docker, VS Code, Visual Studio, WSL, Xcode, Linux}
+  \resumeSubHeadingListEnd
+
+
+%
+%--------PROGRAMMING SKILLS------------
+%\section{Programming Skills}
+%  \resumeSubHeadingListStart
+%    \item{
+%      \textbf{Languages}{: Scala, Python, Javascript, C++, SQL, Java}
+%      \hfill
+%      \textbf{Technologies}{: AWS, Play, React, Kafka, GCE}
+%    }
+%  \resumeSubHeadingListEnd
+
+
+%-------------------------------------------
+\end{document}
